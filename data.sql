@@ -2,6 +2,8 @@ CREATE TABLE Kingdom
 (
   ID_Kingdom VARCHAR(8) NOT NULL,
   Nama_Kingdom VARCHAR(25) NOT NULL,
+  Deskripsi_Kingdom VARCHAR(200) NOT NULL,
+  Gambar VARCHAR (50),
   PRIMARY KEY (ID_Kingdom)
 );
  
@@ -146,26 +148,26 @@ CREATE TABLE Menempati
 );
 
 -- Kingdom
-INSERT INTO Kingdom (ID_Kingdom, Nama_Kingdom) VALUES
-('KD01', 'Animalia'),
-('KD02', 'Plantae'),
-('KD03', 'Fungi'),
-('KD04', 'Protista'),
-('KD05', 'Bacteria'),
-('KD06', 'Archaea');
+INSERT INTO Kingdom (ID_Kingdom, Nama_Kingdom, Deskripsi_Kingdom, Gambar) VALUES
+('KD01', 'Animalia' ,'Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
+('KD02', 'Plantae','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
+('KD03', 'Fungi','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
+('KD04', 'Protista','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
+('KD05', 'Bacteria','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
+('KD06', 'Archaea','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png');
 
 -- Division
 INSERT INTO Divisi (ID_Divisi, Nama_latin, Karakteristik_Divisi, Perilaku_Divisi, ID_Kingdom) VALUES
-('DV000', 'Marchantiophyta', 'Marchantiophyta is a division of non-vascular land plants commonly referred to as liverworts. They are small, liver-shaped plants with a simple structure.', 'Liverworts reproduce both sexually and asexually through specialized structures called gemmae cups.', 'KD02'),
-('DV001', 'Anthocerotophyta', 'Anthocerotophyta, commonly known as hornworts, are a group of bryophytes characterized by their unique horn-shaped sporophyte.', 'Hornworts have symbiotic relationships with cyanobacteria that help fix nitrogen from the atmosphere.', 'KD02'),
-('DV002', 'Bryophyta', 'Bryophyta includes mosses, which are small, non-vascular plants that lack true roots, stems, and leaves.', 'Mosses reproduce via spores and have a crucial role in ecosystems as soil stabilizers and moisture retainers.', 'KD02'),
-('DV003', 'Filicophyta', 'Filicophyta, commonly known as ferns, are vascular plants with compound leaves called fronds.', 'Ferns reproduce via spores and are known for their diverse forms and habitats, ranging from terrestrial to epiphytic.', 'KD02'),
-('DV004', 'Sphenophyta', 'Sphenophyta, or horsetails, are plants with jointed stems and tiny leaves arranged in whorls.', 'Horsetails reproduce through spores and have a high silica content, making them useful for scouring and polishing.', 'KD02'),
-('DV005', 'Cycadophyta', 'Cycadophyta includes cycads, which are palm-like plants with large compound leaves and stout trunks.', 'Cycads are gymnosperms and have cones for reproduction. They are often considered living fossils.', 'KD02'),
-('DV006', 'Ginkgophyta', 'Ginkgophyta consists of ginkgo trees, characterized by fan-shaped leaves and distinctive foul-smelling seeds.', 'Ginkgo trees are dioecious and produce seeds directly on the branches. They are often planted as ornamental trees.', 'KD02'),
-('DV007', 'Pinophyta', 'Pinophyta, or conifers, are cone-bearing trees and shrubs with needle-like or scale-like leaves.', 'Conifers are gymnosperms and produce seeds in cones. They are important timber sources and contribute to various ecosystems.', 'KD02'),
-('DV008', 'Gnetophyta', 'Gnetophyta comprises gnetophytes, which are diverse plants including tropical vines, shrubs, and small trees.', 'Gnetophytes have vessels in their xylem and produce cones or seeds. They have features similar to both angiosperms and gymnosperms.', 'KD02'),
-('DV009', 'Magnoliophyta', 'Magnoliophyta, commonly known as angiosperms or flowering plants, are the most diverse group of land plants.', 'Angiosperms have enclosed seeds, which are protected within fruits. They dominate terrestrial ecosystems and have various reproductive strategies.', 'KD02');
+('DV200', 'Marchantiophyta', 'Marchantiophyta is a division of non-vascular land plants commonly referred to as liverworts. They are small, liver-shaped plants with a simple structure.', 'Liverworts reproduce both sexually and asexually through specialized structures called gemmae cups.', 'KD02'),
+('DV201', 'Anthocerotophyta', 'Anthocerotophyta, commonly known as hornworts, are a group of bryophytes characterized by their unique horn-shaped sporophyte.', 'Hornworts have symbiotic relationships with cyanobacteria that help fix nitrogen from the atmosphere.', 'KD02'),
+('DV202', 'Bryophyta', 'Bryophyta includes mosses, which are small, non-vascular plants that lack true roots, stems, and leaves.', 'Mosses reproduce via spores and have a crucial role in ecosystems as soil stabilizers and moisture retainers.', 'KD02'),
+('DV203', 'Filicophyta', 'Filicophyta, commonly known as ferns, are vascular plants with compound leaves called fronds.', 'Ferns reproduce via spores and are known for their diverse forms and habitats, ranging from terrestrial to epiphytic.', 'KD02'),
+('DV204', 'Sphenophyta', 'Sphenophyta, or horsetails, are plants with jointed stems and tiny leaves arranged in whorls.', 'Horsetails reproduce through spores and have a high silica content, making them useful for scouring and polishing.', 'KD02'),
+('DV205', 'Cycadophyta', 'Cycadophyta includes cycads, which are palm-like plants with large compound leaves and stout trunks.', 'Cycads are gymnosperms and have cones for reproduction. They are often considered living fossils.', 'KD02'),
+('DV206', 'Ginkgophyta', 'Ginkgophyta consists of ginkgo trees, characterized by fan-shaped leaves and distinctive foul-smelling seeds.', 'Ginkgo trees are dioecious and produce seeds directly on the branches. They are often planted as ornamental trees.', 'KD02'),
+('DV207', 'Pinophyta', 'Pinophyta, or conifers, are cone-bearing trees and shrubs with needle-like or scale-like leaves.', 'Conifers are gymnosperms and produce seeds in cones. They are important timber sources and contribute to various ecosystems.', 'KD02'),
+('DV208', 'Gnetophyta', 'Gnetophyta comprises gnetophytes, which are diverse plants including tropical vines, shrubs, and small trees.', 'Gnetophytes have vessels in their xylem and produce cones or seeds. They have features similar to both angiosperms and gymnosperms.', 'KD02'),
+('DV209', 'Magnoliophyta', 'Magnoliophyta, commonly known as angiosperms or flowering plants, are the most diverse group of land plants.', 'Angiosperms have enclosed seeds, which are protected within fruits. They dominate terrestrial ecosystems and have various reproductive strategies.', 'KD02');
 
 -- Phyla
 INSERT INTO Filum (ID_Filum, Nama_latin, Karakteristik_Filum, Perilaku_Filum, ID_Kingdom) VALUES
@@ -251,16 +253,16 @@ INSERT INTO Class (ID_Class, Karakteristik_Class, Perilaku_Class, Nama_latin, ID
 ('CL00012', 'Class characteristics 13', 'Class behavior 13', 'Class Latin Name Entoprocta', 'FL0012', NULL, 'KD01'),
 ('CL00013', 'Class characteristics 14', 'Class behavior 14', 'Class Latin Name Gastrotricha', 'FL0013', NULL, 'KD01'),
 --
-('CL20000', 'Characteristics of Liverworts Class', 'Behavior of Liverworts Class', 'Class Liverworts', NULL, 'DV000', 'KD02'),
-('CL20001', 'Characteristics of Hornworts Class', 'Behavior of Hornworts Class', 'Class Hornworts', NULL, 'DV001', 'KD02'),
-('CL20002', 'Characteristics of Mosses Class', 'Behavior of Mosses Class', 'Class Mosses', NULL, 'DV002', 'KD02'),
-('CL20003', 'Characteristics of Ferns Class', 'Behavior of Ferns Class', 'Class Ferns', NULL, 'DV003', 'KD02'),
-('CL20004', 'Characteristics of Horsetails Class', 'Behavior of Horsetails Class', 'Class Horsetails', NULL, 'DV004', 'KD02'),
-('CL20005', 'Characteristics of Cycads Class', 'Behavior of Cycads Class', 'Class Cycads', NULL, 'DV005', 'KD02'),
-('CL20006', 'Characteristics of Ginkgos Class', 'Behavior of Ginkgos Class', 'Class Ginkgos', NULL, 'DV006', 'KD02'),
-('CL20007', 'Characteristics of Conifers Class', 'Behavior of Conifers Class', 'Class Conifers', NULL, 'DV007', 'KD02'),
-('CL20008', 'Characteristics of Gnetophytes Class', 'Behavior of Gnetophytes Class', 'Class Gnetophytes', NULL, 'DV008', 'KD02'),
-('CL20009', 'Characteristics of Flowering Plants Class', 'Behavior of Flowering Plants Class', 'Class Flowering Plants', NULL, 'DV009', 'KD02'),
+('CL20000', 'Characteristics of Liverworts Class', 'Behavior of Liverworts Class', 'Class Liverworts', NULL, 'DV200', 'KD02'),
+('CL20001', 'Characteristics of Hornworts Class', 'Behavior of Hornworts Class', 'Class Hornworts', NULL, 'DV201', 'KD02'),
+('CL20002', 'Characteristics of Mosses Class', 'Behavior of Mosses Class', 'Class Mosses', NULL, 'DV202', 'KD02'),
+('CL20003', 'Characteristics of Ferns Class', 'Behavior of Ferns Class', 'Class Ferns', NULL, 'DV203', 'KD02'),
+('CL20004', 'Characteristics of Horsetails Class', 'Behavior of Horsetails Class', 'Class Horsetails', NULL, 'DV204', 'KD02'),
+('CL20005', 'Characteristics of Cycads Class', 'Behavior of Cycads Class', 'Class Cycads', NULL, 'DV205', 'KD02'),
+('CL20006', 'Characteristics of Ginkgos Class', 'Behavior of Ginkgos Class', 'Class Ginkgos', NULL, 'DV206', 'KD02'),
+('CL20007', 'Characteristics of Conifers Class', 'Behavior of Conifers Class', 'Class Conifers', NULL, 'DV207', 'KD02'),
+('CL20008', 'Characteristics of Gnetophytes Class', 'Behavior of Gnetophytes Class', 'Class Gnetophytes', NULL, 'DV208', 'KD02'),
+('CL20009', 'Characteristics of Flowering Plants Class', 'Behavior of Flowering Plants Class', 'Class Flowering Plants', NULL, 'DV209', 'KD02'),
 
 --
 ('CL30000', 'Characteristics of Class 1', 'Behavior of Class 1', 'Class Latin Name Zygomycota', 'FL3000', NULL, 'KD03'),
@@ -396,122 +398,124 @@ INSERT INTO Family (ID_Family, Karakteristik_Family, Perilaku_Family, Nama_latin
 
 -- Genus 
 INSERT INTO Genus (ID_Genus, Perilaku_Genus, Karakteristik__Genus, Habitat_Genus, Nama_latin, ID_Family) VALUES
-('GN00000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus habitat 1','Genus Latin 1', 'FM00000'),
-('GN00001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus habitat 2','Genus Latin 2', 'FM00000'),
-('GN00002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus habitat 3','Genus Latin 3', 'FM00001'),
-('GN00003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus habitat 4','Genus Latin 4', 'FM00001'),
-('GN00004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus Latin 5', 'FM00002'),
-('GN00005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus Latin 6', 'FM00002'),
-('GN00006', 'Genus 7 characteristics', 'Genus 7 behavior', 'Genus habitat 7','Genus Latin 7', 'FM00003'),
-('GN00007', 'Genus 8 characteristics', 'Genus 8 behavior', 'Genus habitat 8','Genus Latin 8', 'FM00003'),
-('GN00008', 'Genus 9 characteristics', 'Genus 9 behavior', 'Genus habitat 9','Genus Latin 9', 'FM00004'),
-('GN00009', 'Genus 10 characteristics', 'Genus 10 behavior', 'Genus habitat 10', 'Genus Latin 10', 'FM00004'),
+('GN00000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus Rainforest','Genus Latin 1', 'FM00000'),
+('GN00001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus Temperate Forest','Genus Latin 2', 'FM00000'),
+('GN00002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus Taiga','Genus Latin 3', 'FM00001'),
+('GN00003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus Tundra','Genus Latin 4', 'FM00001'),
+('GN00004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus Shrubland','Genus Latin 5', 'FM00002'),
+('GN00005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus Desert','Genus Latin 6', 'FM00002'),
+('GN00006', 'Genus 7 characteristics', 'Genus 7 behavior', 'Genus Grassland','Genus Latin 7', 'FM00003'),
+('GN00007', 'Genus 8 characteristics', 'Genus 8 behavior', 'Genus Lentic','Genus Latin 8', 'FM00003'),
+('GN00008', 'Genus 9 characteristics', 'Genus 9 behavior', 'Genus Littoral','Genus Latin 9', 'FM00004'),
+('GN00009', 'Genus 10 characteristics', 'Genus 10 behavior', 'Genus Lotic', 'Genus Latin 10', 'FM00004'),
 
 --
-('GN20000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus habitat 1','Genus1', 'FM20000'),
-('GN20001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus habitat 2','Genus2', 'FM20000'),
-('GN20002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus habitat 3','Genus3', 'FM20001'),
-('GN20003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus habitat 4','Genus4', 'FM20001'),
-('GN20004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus5', 'FM20002'),
-('GN20005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus6', 'FM20002'),
+('GN20000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus Rainforest','Genus1', 'FM20000'),
+('GN20001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus Temperate Forest','Genus2', 'FM20000'),
+('GN20002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus Taiga','Genus3', 'FM20001'),
+('GN20003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus Tundra','Genus4', 'FM20001'),
+('GN20004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus Shrubland','Genus5', 'FM20002'),
+('GN20005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus Desert','Genus6', 'FM20002'),
 
 --
-('GN30000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus habitat 1','Genus1 Latin', 'FM30000'),
-('GN30001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus habitat 2','Genus2 Latin', 'FM30000'),
-('GN30002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus habitat 3','Genus3 Latin', 'FM30001'),
-('GN30003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus habitat 4','Genus4 Latin', 'FM30001'),
-('GN30004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus5 Latin', 'FM30002'),
-('GN30005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus6 Latin', 'FM30002'),
+('GN30000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus Rainforest','Genus1 Latin', 'FM30000'),
+('GN30001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus Temperate Forest','Genus2 Latin', 'FM30000'),
+('GN30002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus Taiga','Genus3 Latin', 'FM30001'),
+('GN30003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus Tundra','Genus4 Latin', 'FM30001'),
+('GN30004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus Shrubland','Genus5 Latin', 'FM30002'),
+('GN30005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus Desert','Genus6 Latin', 'FM30002'),
 
 --
-('GN40000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus habitat 1','Genus Latin Name 1 ', 'FM40000'),
-('GN40001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus habitat 2','Genus Latin Name 2 ', 'FM40000'),
-('GN40002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus habitat 3','Genus Latin Name 3 ', 'FM40001'),
-('GN40003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus habitat 4','Genus Latin Name 4 ', 'FM40001'),
-('GN40004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus Latin Name 5 ', 'FM40002'),
-('GN40005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus Latin Name 6 ', 'FM40002'),
+('GN40000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus Rainforest','Genus Latin Name 1 ', 'FM40000'),
+('GN40001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus Temperate Forest','Genus Latin Name 2 ', 'FM40000'),
+('GN40002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus Taiga','Genus Latin Name 3 ', 'FM40001'),
+('GN40003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus Tundra','Genus Latin Name 4 ', 'FM40001'),
+('GN40004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus Shrubland','Genus Latin Name 5 ', 'FM40002'),
+('GN40005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus Desert','Genus Latin Name 6 ', 'FM40002'),
 
 --
-('GN50000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus habitat 1','Genus_Latin Name 1 ', 'FM50000'),
-('GN50001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus habitat 2','Genus_Latin Name 2 ', 'FM50000'),
-('GN50002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus habitat 3','Genus_Latin Name 3 ', 'FM50001'),
-('GN50003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus habitat 4','Genus_Latin Name 4 ', 'FM50001'),
-('GN50004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus_Latin Name 5 ', 'FM50002'),
-('GN50005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus_Latin Name 6 ', 'FM50002'),
+('GN50000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus Rainforest','Genus_Latin Name 1 ', 'FM50000'),
+('GN50001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus Temperate Forest','Genus_Latin Name 2 ', 'FM50000'),
+('GN50002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus Taiga','Genus_Latin Name 3 ', 'FM50001'),
+('GN50003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus Tundra','Genus_Latin Name 4 ', 'FM50001'),
+('GN50004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus Shrubland','Genus_Latin Name 5 ', 'FM50002'),
+('GN50005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus Desert','Genus_Latin Name 6 ', 'FM50002'),
 --
-('GN60000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus habitat 1','Genus_Latin_Name 1 ', 'FM60000'),
-('GN60001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus habitat 2','Genus_Latin_Name 2 ', 'FM60000'),
-('GN60002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus habitat 3','Genus_Latin_Name 3 ', 'FM60001'),
-('GN60003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus habitat 4','Genus_Latin_Name 4 ', 'FM60001'),
-('GN60004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus_Latin_Name 5 ', 'FM60002'),
-('GN60005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus_Latin_Name 6 ', 'FM60002');
+('GN60000', 'Genus 1 characteristics', 'Genus 1 behavior', 'Genus Rainforest','Genus_Latin_Name 1 ', 'FM60000'),
+('GN60001', 'Genus 2 characteristics', 'Genus 2 behavior', 'Genus Temperate Forest','Genus_Latin_Name 2 ', 'FM60000'),
+('GN60002', 'Genus 3 characteristics', 'Genus 3 behavior', 'Genus Taiga','Genus_Latin_Name 3 ', 'FM60001'),
+('GN60003', 'Genus 4 characteristics', 'Genus 4 behavior', 'Genus Tundra','Genus_Latin_Name 4 ', 'FM60001'),
+('GN60004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus Shrubland','Genus_Latin_Name 5 ', 'FM60002'),
+('GN60005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus Desert','Genus_Latin_Name 6 ', 'FM60002');
 
 -- Ekosistem
 INSERT INTO Ekosistem (Habitat, Deskripsi) VALUES
-('Habitat 1', 'Deskrispsi Habitat 1'),
-('Habitat 2', 'Deskrispsi Habitat 2'),
-('Habitat 3', 'Deskrispsi Habitat 3'),
-('Habitat 4', 'Deskrispsi Habitat 4'),
-('Habitat 5', 'Deskrispsi Habitat 5'),
-('Habitat 6', 'Deskrispsi Habitat 6'),
-('Habitat 7', 'Deskrispsi Habitat 7'),
-('Habitat 8', 'Deskrispsi Habitat 8'),
-('Habitat 9', 'Deskrispsi Habitat 9'),
-('Habitat 10', 'Deskrispsi Habitat 10');
+('Rainforest', 'Deskrispsi Habitat Rainforest'),
+('Temperate Forest', 'Deskrispsi Habitat Temperate Forest'),
+('Taiga', 'Deskrispsi Habitat Taiga'),
+('Tundra', 'Deskrispsi Habitat Tundra'),
+('Shrubland', 'Deskrispsi Habitat Shrubland'),
+('Desert', 'Deskrispsi Habitat Desert'),
+('Grassland', 'Deskrispsi Habitat Grassland'),
+('Lentic', 'Deskrispsi Habitat Lentic'),
+('Littoral', 'Deskrispsi Habitat Littoral'),
+('Lotic', 'Deskrispsi Habitat Lotic'),
+('Coral Reef', 'Deskrispsi Habitat Coral Reefs'),
+('Oceanic', 'Deskrispsi Habitat Oceanic');
 
 
 -- Spesies
 INSERT INTO Spesies (ID_Spesies, Karakteristik_Spesies, Perilaku_Spesies, Habitat, Lokasi_Spesies, Tahun_identifikasi, Populasi, Gambar_Spesies, Genus, Spesies, ID_Genus) VALUES
-('SP00000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 , 'Gambar spesies 1', 'Genus Latin 1', 'Spesies Latin 1', 'GN00000'),
-('SP00001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,  'Gambar spesies 2', 'Genus Latin 1', 'Spesies Latin 2', 'GN00000'),
-('SP00002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Habitat 3', 'Lokasi spesies 3', '1970-01-01' , 12345 , 'Gambar spesies 3', 'Genus Latin 2', 'Spesies Latin 3', 'GN00001'),
-('SP00003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Habitat 4', 'Lokasi spesies 4', '1970-01-01' , 12345 , 'Gambar spesies 4', 'Genus Latin 2', 'Spesies Latin 4', 'GN00001'),
-('SP00004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Habitat 5', 'Lokasi spesies 5', '1970-01-01' , 12345 , 'Gambar spesies 5', 'Genus Latin 3', 'Spesies Latin 5', 'GN00002'),
-('SP00005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Habitat 6', 'Lokasi spesies 6', '1970-01-01' , 12345 , 'Gambar spesies 6', 'Genus Latin 3', 'Spesies Latin 6', 'GN00002'),
-('SP00006', 'Spesies 7 characteristics', 'Spesies 7 behavior', 'Habitat 7', 'Lokasi spesies 7', '1970-01-01' , 12345 ,  'Gambar spesies 7', 'Genus Latin 4', 'Spesies Latin 7', 'GN00003'),
-('SP00007', 'Spesies 8 characteristics', 'Spesies 8 behavior', 'Habitat 8', 'Lokasi spesies 8', '1970-01-01' , 12345 ,  'Gambar spesies 8', 'Genus Latin 4', 'Spesies Latin 8', 'GN00003'),
-('SP00008', 'Spesies 9 characteristics', 'Spesies 9 behavior', 'Habitat 9', 'Lokasi spesies 9', '1970-01-01' , 12345 , 'Gambar spesies 9', 'Genus Latin 5', 'Spesies Latin 9', 'GN00004'),
-('SP00009', 'Spesies 10 characteristics', 'Spesies 10 behavior', 'Habitat 10', 'Lokasi spesies 10', '1970-01-01' , 12345 ,  'Gambar spesies 10', 'Genus Latin 5', 'Spesies Latin 10', 'GN00004'),
+('SP00000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Rainforest', 'Lokasi spesies 1', '1970-01-01' , 12345 , 'Gambar spesies 1', 'Genus Latin 1', 'Spesies Latin 1', 'GN00000'),
+('SP00001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Temperate Forest', 'Lokasi spesies 2', '1970-01-01' , 12345 ,  'Gambar spesies 2', 'Genus Latin 1', 'Spesies Latin 2', 'GN00000'),
+('SP00002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Taiga', 'Lokasi spesies 3', '1970-01-01' , 12345 , 'Gambar spesies 3', 'Genus Latin 2', 'Spesies Latin 3', 'GN00001'),
+('SP00003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Tundra', 'Lokasi spesies 4', '1970-01-01' , 12345 , 'Gambar spesies 4', 'Genus Latin 2', 'Spesies Latin 4', 'GN00001'),
+('SP00004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Shrubland', 'Lokasi spesies 5', '1970-01-01' , 12345 , 'Gambar spesies 5', 'Genus Latin 3', 'Spesies Latin 5', 'GN00002'),
+('SP00005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Desert', 'Lokasi spesies 6', '1970-01-01' , 12345 , 'Gambar spesies 6', 'Genus Latin 3', 'Spesies Latin 6', 'GN00002'),
+('SP00006', 'Spesies 7 characteristics', 'Spesies 7 behavior', 'Grassland', 'Lokasi spesies 7', '1970-01-01' , 12345 ,  'Gambar spesies 7', 'Genus Latin 4', 'Spesies Latin 7', 'GN00003'),
+('SP00007', 'Spesies 8 characteristics', 'Spesies 8 behavior', 'Lentic', 'Lokasi spesies 8', '1970-01-01' , 12345 ,  'Gambar spesies 8', 'Genus Latin 4', 'Spesies Latin 8', 'GN00003'),
+('SP00008', 'Spesies 9 characteristics', 'Spesies 9 behavior', 'Littoral', 'Lokasi spesies 9', '1970-01-01' , 12345 , 'Gambar spesies 9', 'Genus Latin 5', 'Spesies Latin 9', 'GN00004'),
+('SP00009', 'Spesies 10 characteristics', 'Spesies 10 behavior', 'Lotic', 'Lokasi spesies 10', '1970-01-01' , 12345 ,  'Gambar spesies 10', 'Genus Latin 5', 'Spesies Latin 10', 'GN00004'),
 
 --
-('SP20000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 , 'Gambar spesies 1', 'Genus1', 'Spesies1', 'GN20000'),
-('SP20001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus1', 'Spesies2', 'GN20000'),
-('SP20002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Habitat 3', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus2', 'Spesies3', 'GN20001'),
-('SP20003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Habitat 4', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus2', 'Spesies4', 'GN20001'),
-('SP20004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Habitat 5', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus3', 'Spesies5', 'GN20002'),
-('SP20005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Habitat 6', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus3', 'Spesies6', 'GN20002'),
+('SP20000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Rainforest', 'Lokasi spesies 1', '1970-01-01' , 12345 , 'Gambar spesies 1', 'Genus1', 'Spesies1', 'GN20000'),
+('SP20001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Temperate Forest', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus1', 'Spesies2', 'GN20000'),
+('SP20002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Taiga', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus2', 'Spesies3', 'GN20001'),
+('SP20003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Tundra', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus2', 'Spesies4', 'GN20001'),
+('SP20004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Shrubland', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus3', 'Spesies5', 'GN20002'),
+('SP20005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Desert', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus3', 'Spesies6', 'GN20002'),
 
 --
-('SP30000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus1 Latin', 'Spesies1 Latin', 'GN30000'),
-('SP30001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus1 Latin', 'Spesies2 Latin', 'GN30000'),
-('SP30002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Habitat 3', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus2 Latin', 'Spesies3 Latin', 'GN30001'),
-('SP30003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Habitat 4', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus2 Latin', 'Spesies4 Latin', 'GN30001'),
-('SP30004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Habitat 5', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus3 Latin', 'Spesies5 Latin', 'GN30002'),
-('SP30005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Habitat 6', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus3 Latin', 'Spesies6 Latin', 'GN30002'),
+('SP30000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Rainforest', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus1 Latin', 'Spesies1 Latin', 'GN30000'),
+('SP30001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Temperate Forest', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus1 Latin', 'Spesies2 Latin', 'GN30000'),
+('SP30002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Taiga', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus2 Latin', 'Spesies3 Latin', 'GN30001'),
+('SP30003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Tundra', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus2 Latin', 'Spesies4 Latin', 'GN30001'),
+('SP30004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Shrubland', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus3 Latin', 'Spesies5 Latin', 'GN30002'),
+('SP30005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Desert', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus3 Latin', 'Spesies6 Latin', 'GN30002'),
 
 --
-('SP40000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus Latin Name 1', 'Spesies Latin Name 1', 'GN40000'),
-('SP40001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus Latin Name 1', 'Spesies Latin Name 2', 'GN40000'),
-('SP40002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Habitat 3', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus Latin Name 2', 'Spesies Latin Name 3', 'GN40001'),
-('SP40003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Habitat 4', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus Latin Name 2', 'Spesies Latin Name 4', 'GN40001'),
-('SP40004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Habitat 5', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus Latin Name 3', 'Spesies Latin Name 5', 'GN40002'),
-('SP40005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Habitat 6', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus Latin Name 3', 'Spesies Latin Name 6', 'GN40002'),
+('SP40000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Rainforest', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus Latin Name 1', 'Spesies Latin Name 1', 'GN40000'),
+('SP40001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Temperate Forest', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus Latin Name 1', 'Spesies Latin Name 2', 'GN40000'),
+('SP40002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Taiga', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus Latin Name 2', 'Spesies Latin Name 3', 'GN40001'),
+('SP40003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Tundra', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus Latin Name 2', 'Spesies Latin Name 4', 'GN40001'),
+('SP40004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Shrubland', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus Latin Name 3', 'Spesies Latin Name 5', 'GN40002'),
+('SP40005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Desert', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus Latin Name 3', 'Spesies Latin Name 6', 'GN40002'),
 
 --
-('SP50000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus_Latin Name 1', 'Spesies_Latin Name 1', 'GN50000'),
-('SP50001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus_Latin Name 1', 'Spesies_Latin Name 2', 'GN50000'),
-('SP50002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Habitat 3', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus_Latin Name 2', 'Spesies_Latin Name 3', 'GN50001'),
-('SP50003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Habitat 4', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus_Latin Name 2', 'Spesies_Latin Name 4', 'GN50001'),
-('SP50004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Habitat 5', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus_Latin Name 3', 'Spesies_Latin Name 5', 'GN50002'),
-('SP50005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Habitat 6', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus_Latin Name 3', 'Spesies_Latin Name 6', 'GN50002'),
+('SP50000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Rainforest', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus_Latin Name 1', 'Spesies_Latin Name 1', 'GN50000'),
+('SP50001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Temperate Forest', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus_Latin Name 1', 'Spesies_Latin Name 2', 'GN50000'),
+('SP50002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Taiga', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus_Latin Name 2', 'Spesies_Latin Name 3', 'GN50001'),
+('SP50003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Tundra', 'Lokasi spesies 4', '1970-01-01' , 12345 ,'Gambar spesies 4', 'Genus_Latin Name 2', 'Spesies_Latin Name 4', 'GN50001'),
+('SP50004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Shrubland', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus_Latin Name 3', 'Spesies_Latin Name 5', 'GN50002'),
+('SP50005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Desert', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus_Latin Name 3', 'Spesies_Latin Name 6', 'GN50002'),
 
 --
-('SP60000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus_Latin_Name 1', 'Spesies_Latin_Name 1', 'GN60000'),
-('SP60001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus_Latin_Name 1', 'Spesies_Latin_Name 2', 'GN60000'),
-('SP60002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Habitat 3', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus_Latin_Name 2', 'Spesies_Latin_Name 3', 'GN60001'),
-('SP60003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Habitat 4', 'Lokasi spesies 4', '1970-01-01' , 12345 , 'Gambar spesies 4', 'Genus_Latin_Name 2', 'Spesies_Latin_Name 4', 'GN60001'),
-('SP60004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Habitat 5', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus_Latin_Name 3', 'Spesies_Latin_Name 5', 'GN60002'),
-('SP60005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Habitat 6', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus_Latin_Name 3', 'Spesies_Latin_Name 6', 'GN60002');
+('SP60000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Rainforest', 'Lokasi spesies 1', '1970-01-01' , 12345 ,'Gambar spesies 1', 'Genus_Latin_Name 1', 'Spesies_Latin_Name 1', 'GN60000'),
+('SP60001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Temperate Forest', 'Lokasi spesies 2', '1970-01-01' , 12345 ,'Gambar spesies 2', 'Genus_Latin_Name 1', 'Spesies_Latin_Name 2', 'GN60000'),
+('SP60002', 'Spesies 3 characteristics', 'Spesies 3 behavior', 'Taiga', 'Lokasi spesies 3', '1970-01-01' , 12345 ,'Gambar spesies 3', 'Genus_Latin_Name 2', 'Spesies_Latin_Name 3', 'GN60001'),
+('SP60003', 'Spesies 4 characteristics', 'Spesies 4 behavior', 'Tundra', 'Lokasi spesies 4', '1970-01-01' , 12345 , 'Gambar spesies 4', 'Genus_Latin_Name 2', 'Spesies_Latin_Name 4', 'GN60001'),
+('SP60004', 'Spesies 5 characteristics', 'Spesies 5 behavior', 'Shrubland', 'Lokasi spesies 5', '1970-01-01' , 12345 ,'Gambar spesies 5', 'Genus_Latin_Name 3', 'Spesies_Latin_Name 5', 'GN60002'),
+('SP60005', 'Spesies 6 characteristics', 'Spesies 6 behavior', 'Desert', 'Lokasi spesies 6', '1970-01-01' , 12345 ,'Gambar spesies 6', 'Genus_Latin_Name 3', 'Spesies_Latin_Name 6', 'GN60002');
 
 
 
@@ -540,16 +544,16 @@ INSERT INTO Status (ID_Spesies, Indeks_Ancaman, Tanggal_deklarasi) VALUES
 
 -- Menempati
 INSERT INTO Menempati(ID_Spesies, Habitat) VALUES
-('SP00000', 'Habitat 1'),
-('SP00001', 'Habitat 2'),
-('SP00002', 'Habitat 3'),
-('SP00003', 'Habitat 4'),
-('SP00004', 'Habitat 5'),
-('SP20000', 'Habitat 6'),
-('SP20001', 'Habitat 7'),
-('SP30000', 'Habitat 8'),
-('SP30001', 'Habitat 9'),
-('SP40002', 'Habitat 10');
+('SP00000', 'Rainforest'),
+('SP00001', 'Temperate Forest'),
+('SP00002', 'Taiga'),
+('SP00003', 'Tundra'),
+('SP00004', 'Shrubland'),
+('SP20000', 'Desert'),
+('SP20001', 'Grassland'),
+('SP30000', 'Lentic'),
+('SP30001', 'Littoral'),
+('SP40002', 'Lotic');
 
 -- Melindungi
 INSERT INTO Melindungi (ID_Konservasi, ID_Spesies) VALUES

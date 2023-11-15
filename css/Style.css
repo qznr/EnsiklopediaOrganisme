@@ -1,0 +1,195 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "DM Sans";
+    color: #444444;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 9rem 0;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Cover Section
+--------------------------------------------------------------*/
+#cover {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/Placeholder/picture.png") top center;
+    background-size: cover;
+    position: relative;
+}
+
+#cover h1 {
+    color: var(--neutral-colors-headings-black, #5D5A88);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Headings/H1 */
+    font-family: DM Sans;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px; /* 117.857% */
+}
+
+#cover p {
+    color: var(--neutral-colors-text-gray, #9795B5);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body/Default */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+#cover .search {
+    max-width: 70vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#cover .search .search-form {
+    width: 100%;
+    height: 12.277vh;
+    border-radius: 2.5rem;
+    background: var(--neutral-colors-color-400, #F2F1FA);
+}
+
+#cover .search .search-form .fa-search {
+    position: relative;
+    margin-right: 10px;
+
+}
+
+#cover .search .search-form input[type=text]{
+    width: 70%;
+    height: 12.277vh;
+    border:none;
+    background-color: transparent;
+}
+
+#cover .search .search-form input[type=text]:focus{
+    border:none;
+    background-color: transparent;
+}
+
+#cover .search .search-form button{
+    padding: 1.125rem 1.5rem;
+    gap: 0.625rem;
+    border-radius: 1.875rem;
+    background: var(--neutral-colors-headings-black, #5D5A88);
+    color: var(--neutral-colors-white, #FFF);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Text single/200/Bold */
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.125rem; /* 100% */
+}
+
+/*--------------------------------------------------------------
+# Kingdom of Life Section
+--------------------------------------------------------------*/
+
+#kingdom h2 {
+    color: var(--neutral-colors-headings-black, #5D5A88);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Headings/H2 */
+    font-family: DM Sans;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.875rem; /* 127.778% */
+}
+
+#kingdom p {
+    color: var(--neutral-colors-text-gray, #9795B5);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body/Default */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+#kingdom .card {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+#kingdom .card img {
+    transition: all 0.25s linear;
+}
+
+#kingdom .card:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
+
+#kingdom .card .card-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+#kingdom .card .card-name {
+    font-weight: bold;
+    left: 0px;
+    right: 0px;
+    color: #000;
+    font-size: 17px;
+    padding: 10px;
+}
+
+#kingdom .card .card-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+#kingdom .card .card-description {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#kingdom .card .card-description a{
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
