@@ -102,6 +102,7 @@ section {
     color: var(--neutral-colors-white, #FFF);
     text-align: right;
     font-feature-settings: 'clig' off, 'liga' off;
+    margin-left: 5%;
 
     /* Text single/200/Bold */
     font-family: DM Sans;
