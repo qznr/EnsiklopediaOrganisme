@@ -76,7 +76,7 @@ $result = $conn->query($sql);
 
     <section id="kingdom" class="d-flex">
         <div class="container">
-            <div class="row justify-content-center"  data-aos="fade-up" data-aos-delay="150">
+            <div class="row justify-content-center"  data-aos="fade-up" data-aos-delay="150" style="padding-bottom: 3.75rem;">
                 <div class="col-xl-6 col-lg-8">
                     <h2>Kingfom Of Life<span></span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </p>
