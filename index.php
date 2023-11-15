@@ -89,7 +89,7 @@ $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
-                        echo '<div class="col-lg-4 col-md-6">';
+                        echo '<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">';
                         echo '    <div class="card">';
                         echo '        <img src="img/Placeholder/Card-Placeholder.png">';
                         echo '        <div class="card-content">';
