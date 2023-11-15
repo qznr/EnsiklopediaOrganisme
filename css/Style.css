@@ -168,28 +168,42 @@ section {
 }
 
 #kingdom .card .card-name {
-    font-weight: bold;
-    left: 0px;
-    right: 0px;
-    color: #000;
-    font-size: 17px;
+    color: var(--neutral-colors-headings-black, #5D5A88);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Headings/H3 */
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.125rem; /* 141.667% */
     padding: 10px;
 }
 
-#kingdom .card .card-name p {
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-}
 
 #kingdom .card .card-description {
-    color: #777;
-    font-size: 12px;
+    color: var(--neutral-colors-text-gray, #9795B5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Body/Default */
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
     padding: 10px;
 }
 
 #kingdom .card .card-description a{
-    color: #777;
-    font-size: 12px;
+    color: var(--neutral-colors-color-900, #8D8BA7);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Text single/200/Bold */
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.125rem; /* 100% */
     padding: 10px;
 }
