@@ -13,7 +13,7 @@ CREATE TABLE Filum
   Perilaku_Filum VARCHAR(250) NOT NULL,
   ID_Kingdom VARCHAR(8) NOT NULL,
   PRIMARY KEY (ID_Filum),
-  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom(ID_Kingdom),
+  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom(ID_Kingdom)
 );
  
 CREATE TABLE Divisi
@@ -24,7 +24,7 @@ CREATE TABLE Divisi
   Perilaku_Divisi VARCHAR(250) NOT NULL,
   ID_Kingdom VARCHAR(8) NOT NULL,
   PRIMARY KEY (ID_Divisi),
-  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom(ID_Kingdom),
+  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom(ID_Kingdom)
 );
  
 CREATE TABLE Class
@@ -39,7 +39,7 @@ CREATE TABLE Class
   PRIMARY KEY (ID_Class),
   FOREIGN KEY (ID_Filum) REFERENCES Filum(ID_Filum),
   FOREIGN KEY (ID_Divisi) REFERENCES Divisi(ID_Divisi),
-  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom(ID_Kingdom),
+  FOREIGN KEY (ID_Kingdom) REFERENCES Kingdom(ID_Kingdom)
 );
  
 CREATE TABLE Ordo
@@ -50,7 +50,7 @@ CREATE TABLE Ordo
   Nama_latin VARCHAR(80) NOT NULL,
   ID_Class VARCHAR(8) NOT NULL,
   PRIMARY KEY (ID_Order),
-  FOREIGN KEY (ID_Class) REFERENCES Class(ID_Class),
+  FOREIGN KEY (ID_Class) REFERENCES Class(ID_Class)
 );
  
 CREATE TABLE Family
@@ -61,7 +61,7 @@ CREATE TABLE Family
   Nama_latin VARCHAR(80) NOT NULL,
   ID_Order VARCHAR(8) NOT NULL,
   PRIMARY KEY (ID_Family),
-  FOREIGN KEY (ID_Order) REFERENCES Ordo(ID_Order),
+  FOREIGN KEY (ID_Order) REFERENCES Ordo(ID_Order)
 );
  
 CREATE TABLE Genus
@@ -73,7 +73,7 @@ CREATE TABLE Genus
   Nama_latin VARCHAR(80) NOT NULL,
   ID_Family VARCHAR(8) NOT NULL,
   PRIMARY KEY (ID_Genus),
-  FOREIGN KEY (ID_Family) REFERENCES Family(ID_Family),
+  FOREIGN KEY (ID_Family) REFERENCES Family(ID_Family)
 );
  
 CREATE TABLE Konservasi
@@ -106,7 +106,7 @@ CREATE TABLE Spesies
   Habitat VARCHAR(50) NOT NULL,
   PRIMARY KEY (ID_Spesies),
   FOREIGN KEY (ID_Genus) REFERENCES Genus(ID_Genus),
-  FOREIGN KEY (Habitat) REFERENCES Ekosistem(Habitat),
+  FOREIGN KEY (Habitat) REFERENCES Ekosistem(Habitat)
 );
  
 CREATE TABLE Status
@@ -446,7 +446,7 @@ INSERT INTO Genus (ID_Genus, Perilaku_Genus, Karakteristik__Genus, Habitat_Genus
 ('GN60004', 'Genus 5 characteristics', 'Genus 5 behavior', 'Genus habitat 5','Genus_Latin_Name 5 ', 'FM60002'),
 ('GN60005', 'Genus 6 characteristics', 'Genus 6 behavior', 'Genus habitat 6','Genus_Latin_Name 6 ', 'FM60002');
 
---Ekosistem
+-- Ekosistem
 INSERT INTO Ekosistem (Habitat, Deskripsi) VALUES
 ('Habitat 1', 'Deskrispsi Habitat 1'),
 ('Habitat 2', 'Deskrispsi Habitat 2'),
@@ -460,7 +460,7 @@ INSERT INTO Ekosistem (Habitat, Deskripsi) VALUES
 ('Habitat 10', 'Deskrispsi Habitat 10');
 
 
---Spesies
+-- Spesies
 INSERT INTO Spesies (ID_Spesies, Karakteristik_Spesies, Perilaku_Spesies, Habitat, Lokasi_Spesies, Tahun_identifikasi, Populasi, Gambar_Spesies, Genus, Spesies, ID_Genus) VALUES
 ('SP00000', 'Spesies 1 characteristics', 'Spesies 1 behavior', 'Habitat 1', 'Lokasi spesies 1', '1970-01-01' , 12345 , 'Gambar spesies 1', 'Genus Latin 1', 'Spesies Latin 1', 'GN00000'),
 ('SP00001', 'Spesies 2 characteristics', 'Spesies 2 behavior', 'Habitat 2', 'Lokasi spesies 2', '1970-01-01' , 12345 ,  'Gambar spesies 2', 'Genus Latin 1', 'Spesies Latin 2', 'GN00000'),
@@ -516,7 +516,7 @@ INSERT INTO Spesies (ID_Spesies, Karakteristik_Spesies, Perilaku_Spesies, Habita
 
 
 
---Konservasi
+-- Konservasi
 INSERT INTO Konservasi (ID_Konservasi, Lokasi_Konservasi, Tanggal_pendirian) VALUES
 ('KS000', 'Lokasi Konservasi 1', '1900-01-01'),
 ('KS001', 'Lokasi Konservasi 2', '1900-01-01'),
@@ -524,7 +524,7 @@ INSERT INTO Konservasi (ID_Konservasi, Lokasi_Konservasi, Tanggal_pendirian) VAL
 ('KS003', 'Lokasi Konservasi 4', '1900-01-01'),
 ('KS004', 'Lokasi Konservasi 5', '1900-01-01');
 
---Status
+-- Status
 INSERT INTO Status (ID_Spesies, Indeks_Ancaman, Tanggal_deklarasi) VALUES 
 ('SP00000', 'Indeks Ancaman Spesies 1', '2001-09-11'),
 ('SP00001', 'Indeks Ancaman Spesies 2', '2001-09-11'),
@@ -538,7 +538,7 @@ INSERT INTO Status (ID_Spesies, Indeks_Ancaman, Tanggal_deklarasi) VALUES
 ('SP40002', 'Indeks Ancaman Spesies 10', '2001-09-11');
 
 
---Menempati
+-- Menempati
 INSERT INTO Menempati(ID_Spesies, Habitat) VALUES
 ('SP00000', 'Habitat 1'),
 ('SP00001', 'Habitat 2'),
@@ -551,7 +551,7 @@ INSERT INTO Menempati(ID_Spesies, Habitat) VALUES
 ('SP30001', 'Habitat 9'),
 ('SP40002', 'Habitat 10');
 
---Melindungi
+-- Melindungi
 INSERT INTO Melindungi (ID_Konservasi, ID_Spesies) VALUES
 ('KS000', 'SP00001'),
 ('KS000', 'SP20001'),
