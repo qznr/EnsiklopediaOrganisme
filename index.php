@@ -91,7 +91,7 @@ $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {
                         echo '<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">';
                         echo '    <div class="card">';
-                        echo '        <img src="img/Placeholder/Card-Placeholder.png">';
+                        echo '        <img src="' . $row['Gambar'] . '">';
                         echo '        <div class="card-content">';
                         echo '            <div class="card-name">';
                         echo '                ' . $row['Nama_Kingdom'];

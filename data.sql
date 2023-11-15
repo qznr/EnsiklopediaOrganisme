@@ -149,12 +149,12 @@ CREATE TABLE Menempati
 
 -- Kingdom
 INSERT INTO Kingdom (ID_Kingdom, Nama_Kingdom, Deskripsi_Kingdom, Gambar) VALUES
-('KD01', 'Animalia' ,'Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
-('KD02', 'Plantae','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
-('KD03', 'Fungi','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
-('KD04', 'Protista','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
-('KD05', 'Bacteria','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png'),
-('KD06', 'Archaea','Lorem Ipsum Dolor Sit Amet','img\Placeholder\Card-Placeholder.png');
+('KD01', 'Animalia' ,'Lorem Ipsum Dolor Sit Amet','img/Placeholder/Card-Placeholder.png'),
+('KD02', 'Plantae','Lorem Ipsum Dolor Sit Amet','img/Placeholder/Card-Placeholder.png'),
+('KD03', 'Fungi','Lorem Ipsum Dolor Sit Amet','img/Placeholder/Card-Placeholder.png'),
+('KD04', 'Protista','Lorem Ipsum Dolor Sit Amet','img/Placeholder/Card-Placeholder.png'),
+('KD05', 'Bacteria','Lorem Ipsum Dolor Sit Amet','img/Placeholder/Card-Placeholder.png'),
+('KD06', 'Archaea','Lorem Ipsum Dolor Sit Amet','img/Placeholder/Card-Placeholder.png');
 
 -- Division
 INSERT INTO Divisi (ID_Divisi, Nama_latin, Karakteristik_Divisi, Perilaku_Divisi, ID_Kingdom) VALUES
