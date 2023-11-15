@@ -3,7 +3,7 @@ CREATE TABLE Kingdom
   ID_Kingdom VARCHAR(8) NOT NULL,
   Nama_Kingdom VARCHAR(25) NOT NULL,
   Deskripsi_Kingdom VARCHAR(200) NOT NULL,
-  Gambar VARCHAR (50),
+  Gambar VARCHAR (500),
   PRIMARY KEY (ID_Kingdom)
 );
  
