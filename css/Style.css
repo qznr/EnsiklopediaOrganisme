@@ -102,7 +102,7 @@ section {
     color: var(--neutral-colors-white, #FFF);
     text-align: right;
     font-feature-settings: 'clig' off, 'liga' off;
-    margin-left: 5%;
+    transform: translate(70%, -5%);
 
     /* Text single/200/Bold */
     font-family: DM Sans;
@@ -110,6 +110,12 @@ section {
     font-style: normal;
     font-weight: 700;
     line-height: 1.125rem; /* 100% */
+}
+
+@media (max-width: 1380px) {
+    #cover .search .search-form button{
+        transform: translate(0,0);
+    }
 }
 
 /*--------------------------------------------------------------
